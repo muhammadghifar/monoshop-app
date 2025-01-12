@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:submission/utils/color.dart';
+import 'package:submission/view/calculator/calculator_screen.dart';
 import 'package:submission/view/home/home_screen.dart';
 import 'package:submission/view/product/search_screen.dart';
 import 'package:submission/view/profile/profile_screen.dart';
@@ -29,6 +30,7 @@ class _MainScreenState extends State<MainScreen> {
     _pages = [
       const HomeScreen(),
       const SearchScreen(),
+      const CalculatorScreen(),
       ProfileScreen(
         username: widget.username,
         // email: widget.email,
@@ -111,6 +113,10 @@ class _MainScreenState extends State<MainScreen> {
           //   icon: Icon(Icons.favorite),
           //   label: 'Wishlist',
           // ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calculate),
+            label: 'Calculator',
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',

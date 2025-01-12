@@ -77,6 +77,15 @@ class ProductDetailScreen extends StatelessWidget {
                               ? FontStyle.italic
                               : FontStyle.normal),
                     ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    const Text('Product Video',
+                        style: TextStyle(fontWeight: FontWeight.w600)),
+                    const SizedBox(
+                      height: 4,
+                    ),
+                    const VideoPlayer(),
                     dividerComponent(height: 24),
                     Row(
                       children: [
@@ -102,7 +111,6 @@ class ProductDetailScreen extends StatelessWidget {
                       ],
                     ),
                     dividerComponent(height: 24),
-                    VideoPlayer(),
                     // const VideoList(),
                     // const Text('review?'),
                     // const Icon(
